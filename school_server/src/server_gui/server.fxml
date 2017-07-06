@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="437.0" prefWidth="356.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.serverController">
+   <children>
+      <Label fx:id="schoolServerLbl" layoutX="102.0" layoutY="14.0" text="School Server" underline="true">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sqlPortTxt" layoutX="155.0" layoutY="122.0" prefHeight="31.0" prefWidth="111.0" />
+      <Label fx:id="portLbl" layoutX="13.0" layoutY="266.0" text="Server Port:" />
+      <Button fx:id="connectBtn" layoutX="77.0" layoutY="376.0" mnemonicParsing="false" onAction="#connect" text="CONNECT" />
+      <Button fx:id="disconBtn" disable="true" layoutX="200.0" layoutY="376.0" mnemonicParsing="false" onAction="#disconnect" text="DISCONNECT" />
+      <Label fx:id="statusLbl1" layoutX="14.0" layoutY="306.0" text="Server Status:" />
+      <Label fx:id="statusLbl2" layoutX="154.0" layoutY="306.0" text="DISCONNECTED" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sqlIPtxt" layoutX="155.0" layoutY="77.0" prefHeight="31.0" prefWidth="111.0" />
+      <TextField fx:id="portTxt" layoutX="155.0" layoutY="261.0" prefHeight="31.0" prefWidth="111.0" />
+      <TextField fx:id="sqlPasswordTxt" layoutX="155.0" layoutY="215.0" prefHeight="31.0" prefWidth="111.0" />
+      <TextField fx:id="sqlUserTxt" layoutX="155.0" layoutY="169.0" prefHeight="31.0" prefWidth="111.0" />
+      <Label fx:id="sqlIPlabel" layoutX="14.0" layoutY="82.0" text="mysql IP:" />
+      <Label fx:id="sqlPortLabel" layoutX="14.0" layoutY="127.0" text="mysql Port:" />
+      <Label fx:id="sqlUserLabel" layoutX="14.0" layoutY="174.0" text="musql User Name:" />
+      <Label fx:id="sqlPassLabel" layoutX="14.0" layoutY="220.0" text="mysql Password:" />
+      <Label fx:id="LabelMyIP" layoutX="14.0" layoutY="344.0" prefHeight="21.0" prefWidth="253.0" text="My IP:" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
